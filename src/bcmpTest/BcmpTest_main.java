@@ -12,8 +12,8 @@ public class BcmpTest_main {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		//これはテスト用：閉鎖型クラスつき待ち行列
-		int time = 1000;
+		//これはテスト用：閉鎖型クラスつき待ち行列 
+		int time = 50000;
 		int N = 12;
 		int classnum = 2;
 		double p[][] = new double[N*classnum][N*classnum];
@@ -27,7 +27,7 @@ public class BcmpTest_main {
 		System.out.println("理論値 : 推移確率 " + Arrays.deepToString(p));
 		System.out.println("理論値 : サービス率 " + Arrays.toString(mu));
 		
-		//simulation
+		//simulation：これ間違いらしい
 		int people = 100;
 		BcmpTest_sim bsim =  new BcmpTest_sim(N,time,p,classnum,mu,people);
 		double simulation[][] = bsim.getSimulation();

@@ -10,7 +10,7 @@ public class Closedqueue01_main {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int N = 100, K = 12;
+		int N = 10, K = 12;
 		double [][]d = new double[K][K];
 		double p[] = new double[K];
 		double mu[] = new double[K];

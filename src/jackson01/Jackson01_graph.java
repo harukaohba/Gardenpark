@@ -20,7 +20,7 @@ public class Jackson01_graph extends Frame implements ActionListener,WindowListe
 
 	ArrayList<Integer>[] queuelength;
 	
-	public Jackson01_graph(ArrayList<Integer>[] arrayLists, int N, int[] node_index) {
+	public Jackson01_graph(ArrayList<Integer>[] arrayLists, int N, String[] node_index) {
 		// TODO Auto-generated constructor stub
 		addWindowListener(this);
 		this.setTitle("Jackson Network");

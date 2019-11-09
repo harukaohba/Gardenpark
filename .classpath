@@ -4,5 +4,6 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="lib" path="/Users/haruka/Documents/java/jcommon-1.0.23.jar"/>
 	<classpathentry kind="lib" path="/Users/haruka/Documents/java/jfreechart-1.0.19.jar"/>
+	<classpathentry kind="lib" path="/Users/haruka/Documents/2_研究室/180517_産技機械学習/mysql-connector-java-5.1.46/mysql-connector-java-5.1.46.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

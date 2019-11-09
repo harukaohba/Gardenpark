@@ -12,12 +12,12 @@ public class Jackson01_main {
 		// TODO Auto-generated method stub
 
 		int time = 50000;
-		int N = 12;
+		int N = 13;
 		double p[][] = new double[N][N];
 		double lambda[] = new double[N];
 		double mu[] = new double[N];
-		int node_index[] = new int[N];
-		String path = "csv/distance_jacksonTest.csv";
+		String node_index[] = new String[N];
+		String path = "csv/distance_jackson_paper.csv";
 		csvread(path,N,p,lambda,mu,node_index);//csvからの値取り込み
 		
 		//理論値
@@ -39,7 +39,7 @@ public class Jackson01_main {
 
 	}
 
-	private static void csvread(String path, int N, double[][] p, double[] lambda, double[] mu, int[] node_index) {
+	private static void csvread(String path, int N, double[][] p, double[] lambda, double[] mu, String[] node_index) {
 		// TODO Auto-generated method stub
 		int row = N;
 		int column = N+3;
@@ -63,7 +63,7 @@ public class Jackson01_main {
 		        		}
 		        		else if (col == data[0].length -3) lambda[rowindex] = Double.parseDouble(data[rowindex][col]);
 		        		else if (col == data[0].length -2) mu[rowindex] = Double.parseDouble(data[rowindex][col]);
-		        		else if (col == data[0].length -1) node_index[rowindex] = Integer.parseInt(data[rowindex][col]);
+		        		else if (col == data[0].length -1) node_index[rowindex] = data[rowindex][col].toString();
 		        }
 		      }
 			
